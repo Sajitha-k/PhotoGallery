@@ -32,7 +32,7 @@ public class PhotoGalleryDbContext : DbContext
             numBytesRequested: 256 / 8));
 
         modelBuilder.Entity<User>().HasData(
-            new User { Id = 1, Username = "sajitha", Password = hashedPassword, Salt = salt }
+            new User { Id = 1, Username = "sajitha-", Password = hashedPassword, Salt = salt }
         );
     }
 }
